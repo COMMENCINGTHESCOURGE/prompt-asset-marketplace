@@ -1,10 +1,13 @@
 {
-  "name": "prompt-asset-marketplace",
+  "name": "@COMMENCINGTHESCOURGE/prompt-asset-marketplace",
   "version": "0.1.0",
   "description": "Packaging and distribution for prompt-asset toolchain",
-  "main": "src/index.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "dist/index.js",
   "bin": {
-    "prompt-asset-pack": "./src/cli.ts"
+    "prompt-asset-pack": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
